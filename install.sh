@@ -17,6 +17,7 @@ enabled=1
 gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 EOF
+sudo dnf check-update
 sudo dnf install google-chrome-stable -y
 
 # add to repo and install node.js
@@ -44,6 +45,7 @@ sudo npm i -g nodemon
 
 # add repo and install skype
 sudo dnf config-manager --add-repo https://repo.skype.com/data/skype-stable.repo 
+sudo dnf check-update
 sudo dnf install skypeforlinux -y 
 
 # sudo reboot
