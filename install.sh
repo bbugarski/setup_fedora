@@ -28,12 +28,15 @@ sudo dnf install skypeforlinux -y
 sudo dnf install viber.x86_64 -y
 sudo dnf install mongodb.x86_64 -y
 sudo dnf install mongodb-server.x86_64 -y
+sudo dnf install postgresql-server postgresql-contrib -y
+sudo dnf install pgadmin3 -y
 
 # install global dependencies
 sudo npm i -g npm #updates npm
 sudo npm i -g typescript
 sudo npm i -g protractor
 sudo npm i -g nodemon
+sudo npm i -g @angular/cli
 
 # sudo reboot
 sudo reboot
